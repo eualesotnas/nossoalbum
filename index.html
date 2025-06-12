@@ -1,32 +1,35 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nosso Album - 8</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  
-  <Style>
-    *{
+  <title>Nosso Álbum - 8</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       background: #000;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       letter-spacing: 2px;
       color: #ffffff;
     }
+
     header {
-      background-color: #ffffff;
-      color: #000000;
-      font-weight: bold;
+      background-color: #fff;
+      color: #000;
+      /* font-weight: bold; */
       padding: 15px;
       text-align: center;
     }
-    .container{
+
+    .container {
       border: #ffffff double;
       margin: 25px;
       padding: 25px;
@@ -34,73 +37,286 @@
       align-items: center;
       justify-content: center;
     }
-    Section{
-      margin: 25px;
-      padding: 25px;
+
+    .main-container {
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 1000px;
+      width: 100%;
     }
-  </Style>
+
+    h3 {}
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    .polaroid {
+      background: #ffffff;
+      border: #ffffff solid;
+      font-family: cursive;
+      color: #000;
+      padding-bottom: 50px;
+      padding-top: 10px;
+    }
+
+    .titulo {
+      margin-bottom: 15px;
+    }
+
+    .carousel-inner {
+      width: 600px;
+      /* largura fixa */
+      height: 400px;
+      /* altura fixa */
+      margin: 0 auto;
+      /* centraliza horizontalmente */
+      aspect-ratio: 4 / 3;
+    }
+
+    .carousel-item {
+      width: 100%;
+      height: 100%;
+
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+      background-image: none;
+    }
+
+    footer {
+      background-color: #fff;
+      color: #000;
+      /* font-weight: bold; */
+      padding: 15px;
+      text-align: center;
+    }
+
+    @media (max-width: 576px) {
+      .main-container {
+        padding: 10px;
+      }
+
+      .carousel-inner {
+        aspect-ratio: 1 / 1;
+        /* mais quadrado em celulares */
+      }
+
+      .carousel-inner {
+        width: 330px;
+        /* largura fixa */
+        height: 400px;
+        /* altura fixa */
+        margin: 0 auto;
+        /* centraliza horizontalmente */
+        aspect-ratio: 4 / 3;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        margin-top: 50px;
+        margin-left: 30px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
   <header>
-    <img src="/img/logoNA.png" alt="LOGO" style="width: 25px;"> NOSSO ALBUM
+    <img src="/img/logoNA.png" alt="LOGO" style="width: 25px;"> NOSSO ÁLBUM DE AVENTURAS
   </header>
-  <main class="container">
-    <Article>
-      <h1>GAleria</h1>
 
-      <section>
-        <div class="titulo">
-          <h3>Titulo Status</h3>
-        </div>
-      
-        <!-- Carrossel Bootstrap -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+  <main class="main-container">
+    <article>
+      <h1>NOSSO ÁLBUM</h1>
+
+      <!-- polaroid5  -->
+      <section class="polaroid">
+        <div id="carousel5" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <img src="https://github.com/TheAleSantos/imagine/blob/main/5-DateNoBrizz/moment3.jpeg?raw=true" class="d-block w-100" alt="scsdc">
+            </div>
+            <div class="carousel-item">
+              <img src="https://github.com/TheAleSantos/imagine/blob/main/5-DateNoBrizz/moment11.jpeg?raw=true" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item active">
+              <img src="https://github.com/TheAleSantos/imagine/blob/main/5-DateNoBrizz/moment12.jpeg?raw=true" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://github.com/TheAleSantos/imagine/blob/main/5-DateNoBrizz/moment2.jpeg?raw=true" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://github.com/TheAleSantos/imagine/blob/main/5-DateNoBrizz/moment4.jpeg?raw=true" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://github.com/TheAleSantos/imagine/blob/main/5-DateNoBrizz/moment5.jpeg?raw=true" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://github.com/TheAleSantos/imagine/blob/main/5-DateNoBrizz/moment1.jpeg?raw=true" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://github.com/TheAleSantos/imagine/blob/main/5-DateNoBrizz/moment13.jpeg?raw=true" class="d-block w-100" alt="...">
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel5" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel5" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
+        </div>
+        <div class="titulo">
+          <h3>Date no Brizz</h3>
+        </div>
+      </section>
+
+<!-- polaroid3  -->
+<section class="polaroid">
+  <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="https://github.com/TheAleSantos/imagine/blob/main/4-DiaDeSol/IMG-20250119-WA0018.jpg?raw=true" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://github.com/TheAleSantos/imagine/blob/main/4-DiaDeSol/IMG-20250119-WA0019.jpg?raw=true" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://github.com/TheAleSantos/imagine/blob/main/4-DiaDeSol/IMG-20250119-WA0005.jpg?raw=true" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://github.com/TheAleSantos/imagine/blob/main/4-DiaDeSol/IMG-20250119-WA0007.jpg?raw=true" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://github.com/TheAleSantos/imagine/blob/main/4-DiaDeSol/IMG-20250119-WA0010.jpg?raw=true" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://github.com/TheAleSantos/imagine/blob/main/4-DiaDeSol/IMG-20250119-WA0012.jpg?raw=true" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://github.com/TheAleSantos/imagine/blob/main/4-DiaDeSol/IMG-20250119-WA0013.jpg?raw=true" class="d-block w-100" alt="...">
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="titulo">
+    <h3>Dia de Sol</h3>
+  </div>
+</section>
+
+      <!-- polaroid3  -->
+      <section class="polaroid">
+        <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img src="https://github.com/TheAleSantos/imagine/blob/main/2-DateNoParque/moment1.jpg?raw=true" class="d-block w-100" alt="...">
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="titulo">
+          <h3>Date no Parque</h3>
+        </div>
+      </section>
+
+      <!-- polaroid2  -->
+      <section class="polaroid">
+        <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="/img/albums/teste/image3.jpeg" class="d-block w-100" alt="...">
+              <img src="https://github.com/TheAleSantos/imagine/blob/main/3-Piniquenique/IMG-20250126-WA0006.jpg?raw=true" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="/img/albums/teste/image2.jpeg" class="d-block w-100" alt="...">
+              <img src="https://github.com/TheAleSantos/imagine/blob/main/3-Piniquenique/IMG-20250126-WA0004.jpg?raw=true" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="/img/albums/teste/image1.jpeg" class="d-block w-100" alt="...">
+              <img src="https://github.com/TheAleSantos/imagine/blob/main/3-Piniquenique/IMG-20250126-WA0009.jpg?raw=true" class="d-block w-100" alt="...">
             </div>
+            <div class="carousel-item">
+              <img src="https://github.com/TheAleSantos/imagine/blob/main/3-Piniquenique/IMG-20250126-WA0002.jpg?raw=true" class="d-block w-100" alt="...">
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </button>
+        </div>
+        <div class="titulo">
+          <h3>Piniquenique</h3>
         </div>
       </section>
 
-      <section>
-        <div class="titulo">
-          <h3>Titulo Status</h3>
+      <!-- polaroid  -->
+      <section class="polaroid">
+        <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://github.com/TheAleSantos/imagine/blob/main/1-ComoTudoComecou/moment2.jpeg?raw=true" class="d-block w-100" alt="scsdc">
+            </div>
+            <div class="carousel-item">
+              <img src="https://github.com/TheAleSantos/imagine/blob/main/1-ComoTudoComecou/moment1.jpeg?raw=true" class="d-block w-100" alt="...">
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
-        ejkbfew,mwklhfnwem,.fwelnfwnefmwklfnmw
+        <div class="titulo">
+          <h3>Como tudo começou</h3>
+        </div>
       </section>
 
-      <section>
-        <div class="titulo">
-          <h3>Titulo Status</h3>
-        </div>
-        ejkbfew,mwklhfnwem,.fwelnfwnefmwklfnmw
-      </section>
-    </Article>
+    </article>
   </main>
 
   <footer>
-
+    O melhor dos presentes é saber que posso compartilhar os melhores momentos com você meu amorzinho meu.
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
